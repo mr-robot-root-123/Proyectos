@@ -38,7 +38,7 @@ Resources:
           api_key="
           eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJjaWQiOiJjYjY2ZjEzNS1iNTI4LTQ5MGQtYTg2Ny1kMmIzZjhiNTdjOTgiLCJjcGlkIjoic3ZwIiwicHBpZCI6ImN1cyIsIml0IjoxNzMxNTk1ODUxLCJldCI6MTczNDE4Nzg1MSwiaWQiOiJkNWRhMGQ4Ni1iODJkLTQ2MmItOGIzMC1hYTI2YTgyMzFhMzEiLCJ0b2tlblVzZSI6ImN1c3RvbWVyIn0.fPeJi_k6GAQ6yv3bOM6yBvNmRouGv5gIl8V1xdAkWcD5vox5i8iCtR89V6by4V4drw2ZIUZ7PeWPSGiMIJSpVWO1_mOunXBZ37xgsgRFTHixLxmkyFBodzreNKYbKBZ5b1JdAzYjOy0-Ckh8NrGAOYljvqXM1WP_RLrq_yBD8PL3BXA9m5NEK3ZgmBuFRPIBmOZzw-mglFmO8Vz67Qc32h5zmiqAXq1SzKuO8xP2k--YD3b3aDIJXfvqtFeK0Cjm8LTGSN5_7T0fjfhQV_wSIqwwzmsZclTndRk9KeRltqDk4YR1fs8AO70Dys1qCbbUmks-HVIhbTvHKxm6frBhg_AyCR9KPAGLPbnH6f-1BemN4drzH9GtKvp00onHhEg5sR3qT7duLs9OWNewA7Ls6nbp6ls-IKDZi0_UuBuj-UwwA8GaCODJgMJ2H2gc6bFLuSxpfANkGrRIsaUpH8U9HMpQsqwZvk9hOr6wzlLYmAIA_e0iagPdvIQ_nG45hZAbUWvn3aV0ZtPTttvB4zint__jIleOTO0pQfRVNiH_EjcRkkztvPiYSf3-VibshDx8DCGLMrURx_e4-3NHIMQseEGhyJebiyG8ht0m9Opxilnw7IYuOMHgcnHSZ3XhdgvQ1mZQzCKleHKiu9edV5vEIIBk95lrdHV-MoKjWfSXIjY"
           api_base_url="https://api.xdr.trendmicro.com"
-          file_path="Path to template"
+          file_path="main.yml"
           
           content=$(cat ${file_path} | jq '.' -MRs)
           payload="{\"type\":\"cloudformation-template\",\"content\":${content}}"
